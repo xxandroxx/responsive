@@ -1,0 +1,133 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 8rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+    .contenedor-nav {
+        display: flex;
+        justify-content: space-between;
+        background: rgb(67, 67, 172);
+    }
+    .contenido-nav {
+        width: 50rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    .contenido-nav a {
+        padding: 2rem 4rem;
+        color: #fff;
+    }
+    .contenido-nav a:hover {
+        background: blueviolet;
+    }
+    .banner {
+        background: url(../img/banner.png);
+        width: 190rem;
+        height: 66rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .main-index {
+        margin-top: 10rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5rem;
+    }
+    .imagenes-persona img {
+        width: 50rem;
+        height: 50rem;
+    }
+    .texto-main {
+        width: 120rem;
+    }
+    .texto-main p {
+        text-align: justify;
+    }
+    .link {
+        text-transform: uppercase;
+        margin-top: 10rem;
+    }
+}
+
+
+/**Responsive**/
+
+@media (max-width: 1023px) {
+    .desaparecer {
+        display: none;
+    }
+    .contenedor-nav {
+        display: flex;
+        justify-content: space-between;
+        background: rgb(67, 67, 172);
+    }
+    .contenido-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contenido-nav a {
+        color: #fff;
+        padding: 3rem 4rem;
+    }
+    .banner {
+        background: url(../img/banner2.jpg);
+        width: 100vw;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .main-index {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 5rem;
+    }
+    .imagenes-persona {
+        width: 100%;
+    }
+    .imagenes-persona img {
+        width: 30rem;
+        margin: 0 auto;
+    }
+    .texto-main h1 {
+        font-size: 3rem;
+    }
+    .texto-main h3 {
+        font-size: 2rem;
+    }
+    .texto-main p {
+        font-size: 1.8rem;
+    }
+    .link {
+        text-transform: uppercase;
+    }
+}
